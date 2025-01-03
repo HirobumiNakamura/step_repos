@@ -26,9 +26,10 @@ SQL Server Management Studioの略。SSMSはSQL ServerならびにRDBを管理�
 |社員番号|数値|〇|
 |会社番号|文字列|〇|
 |社員名|文字列|〇|
+|性別|文字列|〇|
 |住所|文字列||
 |電話番号|文字列||  
-
+|給与|数値|〇|
 4. データベースを作成する
 - データベースを右クリックして、新しいデータベースを選択する 
  - <img src="images/ssms_manual_03.png" width="50%">
@@ -50,14 +51,16 @@ SQL Server Management Studioの略。SSMSはSQL ServerならびにRDBを管理�
 6. クエリを使用してテーブルを作成する
 - 新しいクエリ を選択する
  - <img src="images/ssms_manual_10.png" width="50%">
-- 企業情報テーブルのクエリを作成して、実行する
+- 社員情報テーブルのクエリを作成して、実行する
 ```
 CREATE TABLE [dbo].[employee_info_tbl](
 	[社員番号] [numeric](18, 0) NOT NULL,
 	[会社番号] [numeric](18, 0) NOT NULL,
 	[社員名] [nvarchar](50) NOT NULL,
+	[性別] [nvarchar](50) NOT NULL,
 	[住所] [nvarchar](50) NULL,
-    [電話番号] [nvarchar](50) NULL,
+  	[電話番号] [nvarchar](50) NULL,
+	[給与] [numeric](18, 0) NOT NULL,
 )
 ```
 - データベースを更新して、employee_info_tbl が追加されていることを確認する
