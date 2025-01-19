@@ -2,7 +2,7 @@
 - 本課題でブランチを作成して研修を実施すること
   - ブランチ名：2025-01_SQL_problem01_[githubのユーザ名]
 - 回答のSQLは以下のファイルを作成して記載すること
-  - training/2025-01_SQL/problem01/[githubのユーザ名]/ans_[問題番号].txt
+  - training/2025-01_SQL/problem01/[githubのユーザ名]/ans_[問題番号].md
 - [SSMS 使用手順](https://github.com/HirobumiNakamura/step_repos/blob/main/document/manual/sqlserver/manual.md) を実施して企業情報テーブルと社員情報テーブルを作成済であること
   
 # 問題
