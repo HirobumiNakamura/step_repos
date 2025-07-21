@@ -5,3 +5,11 @@ pythonpath = ["src", "tests"]
 where = ["."]
 include = ["pytest_sample"]
 exclude = ["document", "training"]
+
+[project]
+name = 'pytest_sample'
+requires-python = ">=3.13"
+version = "1.0.0"
+authors = [
+    {name = "HirobumiNakamura", email = "nakamura@step-info.co.jp"},
+]
