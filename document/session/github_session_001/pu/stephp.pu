@@ -1,0 +1,15 @@
+@startuml stephp
+title StepHP
+actor 事業管理部
+Participant 開発用リポジトリ
+Participant 本番用リポジトリ
+Participant 開発用サーバ
+Participant 本番用サーバ
+
+事業管理部 -> 開発用リポジトリ: push
+開発用リポジトリ --> 開発用サーバ: デプロイ
+開発用リポジトリ --> 開発用リポジトリ: チェックOK
+開発用リポジトリ --> 本番用リポジトリ: マージ
+本番用リポジトリ --> 本番用サーバ: デプロイ
+
+@enduml
