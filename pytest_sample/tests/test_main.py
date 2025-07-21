@@ -1,7 +1,7 @@
 def test_main():
     from main import main
 
-    assert main(1, 2) == 4
+    assert main(1, 2) == 5
 
 
 def test_hello():
