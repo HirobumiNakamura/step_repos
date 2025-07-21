@@ -1,5 +1,5 @@
 def test_main():
-    from main import main
+    from src.main import main
 
     assert main(1, 2) == 3
 
