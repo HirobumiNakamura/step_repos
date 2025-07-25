@@ -2,7 +2,7 @@ from mod import module_1
 
 
 def main(a: int, b: int) -> int:
-    return a + b
+    return a * b
 
 
 def hello() -> str:
